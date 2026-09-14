@@ -1,7 +1,7 @@
 # Implementation Plan
 
 ## Build
-- Create a polished single-page Pahadi Keeda trekking site with sticky navigation, full-bleed mountain imagery, trek cards, community benefits, story section, gallery, social callout, contact links, and footer.
+- Create a polished single-page Pahadi Keeda trekking site with sticky navigation with a distinctive mountain-mark logo, full-bleed mountain imagery, trek cards, community benefits, story section, gallery, social callout, contact links, and footer.
 - Keep all seven trek records and booking links in one editable data file, with placeholder dates, pricing, availability, images, and Google Form URLs.
 - Use reusable React sections, semantic design tokens, Lucide icons, responsive mobile navigation, subtle motion, accessible labels, lazy-loaded supporting images, and smooth in-page navigation.
 
