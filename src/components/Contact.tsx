@@ -2,9 +2,9 @@ import { Instagram, Mail, MessageCircle } from "lucide-react";
 import { INSTAGRAM_URL } from "./InstagramCTA";
 
 const contacts = [
-  { icon: Instagram, label: "Instagram", value: "@pahadikeeda", href: INSTAGRAM_URL },
+  { icon: Instagram, label: "Instagram", value: "@pahadi__keeda", href: INSTAGRAM_URL },
   { icon: MessageCircle, label: "WhatsApp", value: "Chat with our team", href: "https://wa.me/YOUR_WHATSAPP_NUMBER" },
-  { icon: Mail, label: "Email", value: "hello@pahadikeeda.com", href: "mailto:hello@pahadikeeda.com" },
+  { icon: Mail, label: "Email", value: "hello@pahadi__keeda.com", href: "mailto:hello@pahadikeeda.com" },
 ];
 
 export function Contact() {
