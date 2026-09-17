@@ -11,6 +11,7 @@ export function BrandLogo({ inverse = false }: { inverse?: boolean }) {
       )}
       aria-label="Pahadi Keeda home"
     >
+      
       <img
         src={logo}
         alt="Pahadi Keeda"
