@@ -1,39 +1,39 @@
-import aadrai from "@/assets/Aadrais.avif";
-import harishchandragad from "@/assets/harichandragads.jpeg";
-import kalsubai from "@/assets/Kalsubais.avif";
-import raigad from "@/assets/raigads.jpg";
-import rajgad from "@/assets/Rajgads.jpg";
-import ratangad from "@/assets/ratangads.jpg";
+import P1 from "@/assets/P1.jpeg";
+import P2 from "@/assets/P2.jpeg";
+import P3 from "@/assets/P3.jpeg";
+import P4 from "@/assets/P4.jpeg";
+import P5 from "@/assets/P5.jpeg";
+import P6 from "@/assets/P6.jpeg";
 
 const images = [
   {
-    src: rajgad,
-    alt: "Rajgad fort trek in Maharashtra",
+    src: P1,
+    alt: "Pahadi Keeda trek moment",
     className: "md:col-span-2 md:row-span-2",
   },
   {
-    src: kalsubai,
-    alt: "Kalsubai mountain trek",
+    src: P2,
+    alt: "Pahadi Keeda trekking adventure",
     className: "",
   },
   {
-    src: aadrai,
-    alt: "Aadrai jungle trek",
+    src: P3,
+    alt: "Pahadi Keeda trek experience",
     className: "",
   },
   {
-    src: ratangad,
-    alt: "Ratangad fort trek",
+    src: P4,
+    alt: "Pahadi Keeda mountain adventure",
     className: "",
   },
   {
-    src: harishchandragad,
-    alt: "Harishchandragad trek",
+    src: P5,
+    alt: "Pahadi Keeda trekking journey",
     className: "md:col-span-2",
   },
   {
-    src: raigad,
-    alt: "Raigad fort trek",
+    src: P6,
+    alt: "Pahadi Keeda trail adventure",
     className: "",
   },
 ];
