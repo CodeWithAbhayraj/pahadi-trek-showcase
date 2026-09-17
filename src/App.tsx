@@ -8,6 +8,7 @@ import { TrekGallery } from "@/components/TrekGallery";
 import { TrekSection } from "@/components/TrekSection";
 import { WhyPahadiKeeda } from "@/components/WhyPahadiKeeda";
 
+
 export function App() {
   return <><Navbar /><main><Hero /><TrekSection /><WhyPahadiKeeda /><About /><TrekGallery /><InstagramCTA /><Contact /></main><Footer /></>;
 }
