@@ -1,48 +1,21 @@
 import {
   CalendarDays,
   Clock3,
-  Download,
   Gauge,
   MapPin,
   Ticket,
 } from "lucide-react";
-import { toPng } from "html-to-image";
-import { useRef } from "react";
 
 import type { Trek } from "@/data/treks";
 import { Button } from "./Button";
 
 export function TrekCard({ trek }: { trek: Trek }) {
-  const cardRef = useRef<HTMLElement>(null);
-
   const handleBooking = (url: string) => {
     window.open(url, "_blank", "noopener,noreferrer");
   };
 
-  const handleDownload = async () => {
-    if (!cardRef.current) return;
-
-    try {
-      const dataUrl = await toPng(cardRef.current, {
-        cacheBust: true,
-        pixelRatio: 2,
-        backgroundColor: "#ffffff",
-      });
-
-      const link = document.createElement("a");
-      link.download = `${trek.name.replace(/\s+/g, "-")}-Trek-Card.png`;
-      link.href = dataUrl;
-      link.click();
-    } catch (error) {
-      console.error("Failed to download trek card:", error);
-    }
-  };
-
   return (
-    <article
-      ref={cardRef}
-      className="group flex h-full flex-col overflow-hidden rounded-card border border-border bg-card shadow-card transition-all duration-300 hover:-translate-y-1 hover:shadow-card-hover"
-    >
+    <article className="group flex h-full flex-col overflow-hidden rounded-card border border-border bg-card shadow-card transition-all duration-300 hover:-translate-y-1 hover:shadow-card-hover">
       <div className="relative aspect-[4/3] overflow-hidden bg-muted">
         <img
           src={trek.image}
@@ -106,23 +79,12 @@ export function TrekCard({ trek }: { trek: Trek }) {
             </strong>
           </div>
 
-          <div className="flex gap-2">
-            <Button
-              onClick={() => handleDownload()}
-              variant="outline"
-              aria-label={`Download ${trek.name} trek card`}
-            >
-              <Download size={16} />
-              <span className="hidden sm:inline">Download</span>
-            </Button>
-
-            <Button
-              onClick={() => handleBooking(trek.googleFormUrl)}
-              aria-label={`Book a seat for ${trek.name}`}
-            >
-              Book Seat
-            </Button>
-          </div>
+          <Button
+            onClick={() => handleBooking(trek.googleFormUrl)}
+            aria-label={`Book a seat for ${trek.name}`}
+          >
+            Book Seat
+          </Button>
         </div>
       </div>
     </article>
