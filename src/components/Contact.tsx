@@ -8,12 +8,14 @@ const contacts = [
     value: "@pahadi__keeda",
     href: "https://www.instagram.com/pahadi__keeda",
   },
+
   {
     icon: MessageCircle,
     label: "WhatsApp",
     value: "+91 9309177898",
     href: "https://wa.me/919309177898",
   },
+  
   {
     icon: Mail,
     label: "Email",
