@@ -10,6 +10,7 @@ const links = [
   { label: "Contact", href: "#contact" },
 ];
 
+
 export function Navbar() {
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
