@@ -23,6 +23,7 @@ export function InstagramCTA() {
           </p>
         </div>
 
+
         <a
           href={INSTAGRAM_URL}
           target="_blank"
