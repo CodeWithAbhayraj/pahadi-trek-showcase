@@ -34,6 +34,7 @@ export function About() {
         </div>
 
 
+
         {/* About Content */}
         <div>
           <p className="eyebrow">
